@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Eternal Knight</string>
+    <string name="level_d">Level %d</string>
+    <string name="game_over">GAME OVER!</string>
+    <string name="your_score">Your score :</string>
+    <string name="play_again">Play Again</string>
+    <string name="_0">0</string>
+</resources>

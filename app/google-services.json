@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "834447506030",
+    "firebase_url": "https://eternal-knight-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "eternal-knight",
+    "storage_bucket": "eternal-knight.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834447506030:android:c39882a6742ce6481c047f",
+        "android_client_info": {
+          "package_name": "com.rivskyinc.eternalknight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834447506030-oefko0uu7qkkrm8p8a822toe650nnvee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR-DZRE81U4ybir8GVcJKOKdqSQ6trCAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834447506030-oefko0uu7qkkrm8p8a822toe650nnvee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

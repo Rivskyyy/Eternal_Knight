@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_asset_castle_vert"
+    tools:context=".GameActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progressPowerAttack"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:progressDrawable="@drawable/custon_progress"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAttackPower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLevel">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Undead"
+            android:textSize="25sp"
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_black"
+            />
+        <ProgressBar
+            android:id="@+id/progressBarHealthSkeleton"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:progressDrawable="@drawable/custom_progress_health"
+            app:layout_constraintEnd_toEndOf="@+id/textViewHealthSkeleton"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLevel"
+            app:layout_constraintVertical_bias="0.451" />
+
+        <TextView
+            android:id="@+id/textViewHealthSkeleton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_black"
+            android:text="15"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarHealthSkeleton" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLevel">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_black"
+            android:text="You"
+            android:textColor="@color/red"
+            android:textSize="25sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarHealthKnight"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:progressDrawable="@drawable/custom_progress_health"
+            app:layout_constraintEnd_toEndOf="@+id/textViewHealthSkeleton"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLevel"
+            app:layout_constraintVertical_bias="0.451" />
+
+        <TextView
+            android:id="@+id/textViewHealthKnight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_black"
+            android:text="50"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarHealthSkeleton" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:src="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/progressPowerAttack"
+        app:layout_constraintEnd_toEndOf="@+id/progressPowerAttack"
+        app:layout_constraintStart_toStartOf="@+id/progressPowerAttack"
+        app:layout_constraintTop_toTopOf="@+id/progressPowerAttack" />
+    <TextView
+        android:id="@+id/textViewLevelUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center"
+        android:text="LEVEL UP!"
+        android:textColor="@color/red"
+        android:textSize="50sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textViewTimerStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/red"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_black"
+
+        android:gravity="center"
+        android:text="Level : "
+
+        android:textAllCaps="false"
+
+
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center"
+        android:text="1"
+        android:textAllCaps="true"
+
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageSkeleton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="15dp"
+        android:rotationY="180"
+        android:src="@drawable/skeleton_asset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703" />
+    <ImageView
+        android:id="@+id/grave"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone"
+        android:src="@drawable/grave_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703" />
+    <ImageView
+        android:id="@+id/explosionSkeleton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="15dp"
+        android:rotationY="180"
+        android:src="@drawable/explosion"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703" />
+
+    <ImageView
+        android:id="@+id/imageKnight"
+        android:layout_width="150dp"
+
+        android:layout_height="150dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/knight_asset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageSkeleton"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+    <ImageView
+        android:id="@+id/explosionKnight"
+        android:layout_width="150dp"
+
+        android:layout_height="150dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/explosion"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageSkeleton"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <!--    <Button-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:background="#FFFF0"-->
+    <!--        android:text="@null"-->
+    <!--       -->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/attackPower"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/progressPowerAttack"-->
+    <!--        tools:layout_editor_absoluteX="16dp" />-->
+
+    <ImageView
+        android:id="@+id/buttonAttackPower"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="4dp"
+
+        android:src="@drawable/sword_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
